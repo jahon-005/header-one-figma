@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Cabin:wght@100;200;300;400;500;600;700&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Cabin", sans-serif;
+  overflow: hidden;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+button{
+    cursor: pointer;
+}
+
+.bg-yellow {
+  background: #ffc017;
+}
+
+.container {
+  width: 1280px;
+  margin: 0px auto;
+}
+
+.ul__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.top__link {
+  font-weight: 400;
+  font-size: 17px;
+  color: #000;
+}
+.language__select {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.navbar__btn {
+  padding: 12px 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.header__left {
+  width: 60%;
+}
+
+.left__top {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 27px 0px;
+
+}
+
+.left__bottom {
+  margin-top: 110px;
+  width: 42%;
+}
+
+.bottom__title {
+  font-family: Cabin;
+  font-size: 77px;
+  font-weight: 700;
+  color: #000;
+  font: bold;
+}
+
+.bottom__paragraf {
+  font-family: Raleway;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.bottom__btn {
+  padding: 20px;
+  border-radius: 14px;
+  gap: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+}
+
+.header__right {
+  background-image: url("bg-img.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.right__top {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin: 27px 0px;
+}
+.right__bottom {
+  margin-top: 18px;
+}
+
+.bottom__bg{
+    background-image: url("Rectangle.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+@media (max-width: 376px) {
+    .container{
+        width: 375px;
+        padding: 10px;
+    }
+    .right__bottom{
+        display: none;
+    }
+    .left__bottom{
+        width: 90%;
+    }
+
+    .ul__list{
+        gap: 0px;
+    }
+    .right__top{
+        display: flex;
+        flex-wrap: wrap;
+    }
+ }
